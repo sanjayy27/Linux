@@ -1,0 +1,25 @@
+# Required dependencies
+sudo apt update
+sudo apt install -y git build-essential dkms linux-headers-$(uname -r)
+sudo apt install bc module-assistant build-essential dkms
+sudo m-a prepare
+
+# Cloning Repository
+git clone https://github.com/tomaspinho/rtl8821ce.git
+
+# Navigating to Driver Folder
+cd rtl8821ce
+
+# Build and install the driver
+sudo ./dkms-install.sh
+
+# Load the driver module
+sudo modprobe 8821ce
+
+# Check if the driver is working
+ip link
+
+# Remove driver
+sudo ./dkms-remove.sh
+
+Wifi driver source code :https://github.com/tomaspinho/rtl8821ce
