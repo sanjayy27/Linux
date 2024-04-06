@@ -28,7 +28,7 @@ sudo nano /etc/modprobe.d/blacklist.conf
 #Step 9
 blacklist rtw88_8821ce
 
-#Credits:https://forums.linuxmint.com/viewtopic.php?t=394684
-
+https://forums.linuxmint.com/viewtopic.php?t=394684
+https://github.com/tomaspinho/rtl8821ce
 
 
